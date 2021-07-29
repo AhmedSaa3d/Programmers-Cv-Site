@@ -1,0 +1,723 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    color:#2ecc71;
+    transition: all 1s ease-in-out;
+}
+
+img{
+    width:100%;
+    height: 100%;
+}
+.black{
+   padding:70px;
+   background:rgba(233,30,99,.5);
+ }
+.home .black{/*un need */
+ background:rgba(3,3,3,.8);
+ position: absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ padding: 0;
+ z-index: 988 !important;
+}
+
+/********************************************************************************************/
+/********************************************************************************************/
+                         /*Start navbar*/
+.navbar{
+    position: fixed;
+    top:0;
+    left:0px;
+    background:rgba(233,30,99,.5);
+    width:100%;
+    padding-top: 10px;
+    margin-bottom: 0;
+    border: 0;
+    height: 70px;
+    z-index:999 !important;
+}
+.navbar .center-block{
+ margin-top:8px;
+ text-align: center;
+}
+.navbar i{
+    font-size: 33px;
+    color:#2ecc71;
+}
+.navbar .logo{
+   font-size: 33px;
+   color: #2ecc71;
+   text-align: center;
+}
+.navbar .dropdown{
+    float: right;
+    margin-top: 5px;
+    border: 1px solid #2ecc71;
+}
+.navbar .dropdown button,
+.navbar .dropdown button:hover,
+.navbar .dropdown button:active{
+    background:none;
+    width: 200px;
+    text-align: center;
+    color: #2ecc71;
+}
+.navbar .dropdown .dropdown-menu{
+   width:200px;
+   background:rgba(233,30,99,.5);
+    padding: 10px 0px 5px 15px;
+   line-height: 2;
+}
+.navbar .dropdown .dropdown-menu a,
+.navbar .dropdown .dropdown-menu a:hover{
+  color:#2ecc71;  
+  text-decoration: none;
+}
+.navbar .dropdown .dropdown-menu a:hover{
+   padding-left:15px;
+}
+                        /*End navbar*/                          
+/********************************************************************************************/ 
+/********************************************************************************************/
+                         /*Start Home*/
+.home{
+width:100%;
+height:100%;
+min-height: 100vh;
+text-align: center;
+position: relative;
+}
+.home .carousel {
+ height:100%;
+ min-height: 100vh;
+}
+.home .carousel .carousel-inner .item{/*height change in the media*/
+ height:800px;
+ min-height:100vh;
+}
+.home .carousel .carousel-inner .item img{
+width:100%;
+height:100%;
+}
+/*carousel caption*/
+.home .carousel-caption{
+    padding-right:20px;
+    padding-left:20px;
+    top:25%;
+}
+.home .carousel-caption h1,
+.home .carousel-caption .h1{
+ font-weight:bold;
+ font-size:80px;
+}
+.home .carousel-caption .h1 span{
+ font-weight: bolder;
+}
+.home .carousel-caption  .lead{
+ color:#FFF;
+}
+.home .carousel .lef,
+.home .carousel .righ{
+ position: absolute;
+ bottom: 20px;
+ left:100px;
+ border:2px solid #333;
+ text-align: center;
+ width:50px;
+ height: 50px;
+ background:#333;
+} 
+.home .carousel .righ{
+ left:160px;
+ }
+.home .carousel .carousel-control {
+ width:100%;
+ height:100%;
+}
+.home .carousel .carousel-control .glyphicon-chevron-left{
+ transform: translate(-2px,-6px);
+ color:#2ecc71;
+}
+.home .carousel .carousel-control .glyphicon-chevron-right{
+ transform: translate(4px,-6px);
+  color:#2ecc71;
+}
+
+                        /*End Home*/                          
+/********************************************************************************************/ 
+/********************************************************************************************/
+                        /*Strat About Us*/
+.aboutus{
+  padding-bottom:100px;
+   background: #333;
+}
+.aboutus .head{
+ text-align: center;
+  margin-bottom: 70px;
+  background:url("../swr/about.jpg")no-repeat center center/cover fixed;
+}
+.aboutus .head h2{
+   font-size: 60px;
+    display: inline;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #2ecc71;
+    font-weight: bold;
+    color:#456;
+}
+.aboutus .head span{
+     font-size: 60px;
+    background: #2ecc71;
+    color:#456;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    padding: 15px;
+    margin-left: 15px;
+    padding-bottom: 20px;
+}
+.aboutus .rig h3{
+     font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #456;
+}
+.aboutus .rig .upp{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.9em;
+    margin-bottom: 35px;
+    color: #999;
+}
+.aboutus .rig .upp strong{
+ color:#999;
+}
+.aboutus .rig .dwonp{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 40px;
+    color: #777;
+    padding-right:5px;
+}
+.aboutus .rig .skill .text {
+margin-bottom: 10px;
+}
+.aboutus .rig .skill .text p:first-child{
+ width:93%;
+ float: left;
+ color:#456;
+ font-weight: 600;
+ font-size:20px;
+}
+.aboutus .rig .skill .text p:last-child{
+ width:7%;
+ float: right;
+ color:#456;
+ font-weight: 600;
+ font-size:20px;
+}
+.aboutus .rig .skill .progress{
+    height: 5px;
+    border: 0px;
+    border-bottom: 1px solid #2ecc71;
+    background: #333;
+}
+.aboutus .rig .skill .progress .progress-bar{
+ height: 5px;
+ background: #2ecc71;
+}
+/*start facts*/
+.aboutus .facts {
+ text-align:center;
+ padding-top:40px;
+}
+.aboutus .facts h3{
+   margin-bottom: 40px;
+   color: #456;
+   font-size:40px;
+}
+.aboutus .facts h3:before{
+ content: '';
+ width:30px;
+ height:1px;
+ color:#2ecc71;
+}
+.aboutus .facts .dad{
+ background:#1e1e1e;
+ padding: 20px;
+ border:10px solid #333;
+}
+.aboutus .facts .dad i{
+ font-size:40px;
+ margin-bottom: 10px;
+ color:#2ecc71;
+}
+.aboutus .facts .dad p:first-of-type{
+ font-size: 40px;
+ font-weight: 500;
+ color:#456;
+}
+.aboutus .facts .dad p:last-of-type{
+font-size:30px;
+color:#456;
+}
+
+
+                         /*End About Us*/    
+/********************************************************************************************/
+/********************************************************************************************/
+                         /*Start Resum*/ 
+.resum{
+padding-bottom:100px;
+  background: #456;
+}
+.resum .head{
+  margin-bottom: 70px;
+ background:url("../swr/resum.jpg")no-repeat center center/cover fixed;
+ text-align: center;
+}
+.resum .head span{
+     font-size: 60px;
+    background: #2ecc71;
+    color:#456;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    padding: 15px;
+    margin-right: 15px;
+    padding-bottom: 20px;
+}
+.resum .head h2{
+   font-size: 60px;
+    display: inline;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #2ecc71;
+    font-weight: bold;
+    color:#456;
+}
+
+.resum .rig{
+ position: relative;
+}
+.resum .el5at{
+    width: 2px;
+    height: 600px;
+    background: #EEE;
+    position: absolute;
+    top: 20px;
+    left: 32px;
+}
+
+.resum .outer{
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 7px;
+    top:-11px;
+  
+ }
+.resum .outer .inner{
+  width:52px;
+  height:52px;
+  background:#2ecc71;
+  transform: rotate(45deg);
+
+}
+.resum .outer i{
+    font-size: 33px;
+    transform: rotate(-45deg);
+    color: #456;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+ 
+}
+.resum h3{
+ margin-bottom: 50px;
+ margin-top:0px;
+ margin-left:120px;
+color:#333;
+}
+
+.resum .content{
+ margin-left:65px;
+ margin-bottom:50px;
+}
+.resum .content h4{
+ color:#333;
+}
+.resum .content p:first-child{
+ margin-bottom:20px;
+position: relative;
+color:#eee;
+}
+.resum .content p:last-child{
+ color:#EEE;
+}
+.resum .content p:first-child:before{
+     content: '';
+    width: 11px;
+    height: 11px;
+    background: #2ecc71;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: -52px;
+}
+
+                            /*End resum*/
+/********************************************************************************************/
+/********************************************************************************************/
+                         /*Start Skills*/  
+.skills{
+  text-align: center;
+  padding-bottom:100px;
+   background: #333;
+}
+.skills .head{
+  margin-bottom: 70px;
+ background:url("../swr/skills.jpg")no-repeat center center/cover fixed;
+}
+.skills .head span{
+     font-size: 60px;
+    background: #2ecc71;
+    color:#333;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    padding: 15px;
+    margin-right: 15px;
+    padding-bottom: 20px;
+}
+.skills .head h2{
+   font-size: 60px;
+    display: inline;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #2ecc71;
+    font-weight: bold;
+    color:#333;
+}
+.skills .up h3{
+ margin-bottom: 50px;
+ color:#456;
+}
+.skills .up .progress{
+ border-radius:30px;
+ height:30px;
+ line-height: 30px;
+ color:#456;
+}
+.skills .up .progress .progress-bar{
+ background:#2ecc71;
+ color:#EEE;
+ line-height: 30px;
+ font-size:15px;
+}
+
+
+                          /*End Skills*/    
+
+/********************************************************************************************/
+/********************************************************************************************/
+                        /*Strat service*/
+.service{
+  text-align: center;
+  padding-bottom:100px;
+  background: #333;
+}
+.service .head{
+  margin-bottom: 70px;
+  background:url("../swr/service.jpg")no-repeat center center/cover fixed;
+}
+.service .head h2{
+   font-size: 60px;
+    display: inline;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #2ecc71;
+    font-weight: bold;
+    color:#456;
+}
+.service .head span{
+     font-size: 60px;
+    background: #2ecc71;
+    color:#456;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    padding: 15px;
+    margin-right: 15px;
+    padding-bottom: 20px;
+}
+.service .up{
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.service .up .icon{
+  width:20%;
+  font-size:50px;
+  color:#2ecc71;
+  float: left;
+}
+.service .up .icon i{
+  border-radius: 100%;
+  padding:7px;
+  margin-top:30px;
+ }
+.service .up .text{
+  width:80%;
+  float: right;
+  color:#fff;
+  line-height: 1.9;
+}
+.service .up .text p{
+  color:#EEE;
+  padding:0 5px;
+}
+.service .up .text h3{
+  margin-top:0px;
+  color:#456;
+}
+
+
+.service .mob{
+    padding:0 50px;
+    text-align: center;
+  
+ }
+.service .mob .insid-mob{
+  border: 1px solid #456;
+  border-radius: 20px;
+  height: 565px;
+  padding:20px;
+   background: #2ecc71;
+}
+.service .mob .insid-mob .noqta{
+  border-radius: 100%;
+  border:1px solid #456;
+  height:13px;
+  width:13px;
+  display:inline-block;
+  margin-right: 20px;
+}
+.service .mob .insid-mob .longsound{
+  border-radius: 20px;
+  border:1px solid #456;
+  height:13px;
+  width:150px;
+  display:inline-block;
+}
+.service .mob .insid-mob .mob-body{
+  width:100%;
+  border: 1px solid #456;
+  height:434px;
+  margin:20px auto 10px;
+   background: #FFF;
+}
+.service .mob .insid-mob .mob-bottom{
+  width:40px;
+  height:40px;
+  border:1px solid #456;
+  border-radius: 100%;
+ text-align: center;
+ margin: auto auto;  
+  
+}
+
+                         /*End service*/    
+/********************************************************************************************/ 
+/********************************************************************************************/
+                         /*strat features*/
+.features{
+  background:#333;
+  padding-bottom:40px;
+ }
+.features .head{
+  margin-bottom: 70px;
+  background:url("../swr/service.jpg")no-repeat center center/cover fixed;
+}
+.features .head h2{
+   font-size: 60px;
+    display: inline;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #2ecc71;
+    font-weight: bold;
+    color:#456;
+}
+.features .head span{
+     font-size: 60px;
+    background: #2ecc71;
+    color:#456;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    padding: 15px;
+    margin-right: 15px;
+    padding-bottom: 20px;
+}
+.features .feat{
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #1e1e1e;
+ }
+ .features .feat h3{
+  color:#456;
+  margin-bottom: 20px;
+ }
+.features .feat span {
+    font-size:33px;
+    color:#2ecc71;
+    margin-bottom: 20px;
+}
+.features .feat .lead{
+ color:#EEE;
+ font-size:16px;
+ line-height: 1.6;
+}
+
+                          /*End features*/
+/********************************************************************************************/ 
+/********************************************************************************************/
+                           /*Strat clients*/
+.clients{
+  background:#333;
+  padding-bottom:40px;
+ }
+.clients .head{
+  margin-bottom: 70px;
+  background:url("../swr/service.jpg")no-repeat center center/cover fixed;
+}
+.clients .head h2{
+   font-size: 60px;
+    display: inline;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #2ecc71;
+    font-weight: bold;
+    color:#456;
+}
+.clients .head span{
+     font-size: 60px;
+    background: #2ecc71;
+    color:#456;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    padding: 15px;
+    margin-right: 15px;
+    padding-bottom: 20px;
+}
+
+.clients .dwon h3{
+    font-size: 35px;
+    color: #456;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center
+}
+.clients .dwon .inner{
+min-height:480px;
+ 
+}
+.clients .dwon .cont p:first-of-type{
+color:#aaa;
+margin-bottom: 0px;
+font-size:20px;
+}
+.clients .dwon .cont h4{
+ color:#455;
+ font-weight:bold;
+ font-size:30px;
+ margin-bottom:20px;
+ 
+}
+.clients .dwon .cont i{
+ font-size:40px;
+ margin-bottom:20px;
+}
+.clients .dwon .cont .text i{
+ float:right;
+ clear: both;
+}
+.clients .dwon .cont .text .clear-both{
+ clear:both;
+}
+
+.clients .dwon .cont .text{
+}
+.clients .dwon .cont .text p:first-of-type{
+ color:#aaa;
+margin-bottom:20px;
+margin-left:50px;
+margin-right: 50px;
+}
+.clients .dwon .cont .text p:nth-of-type(2),
+.clients .dwon .cont .text p:nth-of-type(3)
+{
+ color:#455;
+ font-weight:bold;
+ font-size:20px;
+}
+.clients .dwon .cont .text p span{
+ color:#aaa;
+ font-weight: normal;
+}
+.clients .dwon .cont figure{
+ height:450px;
+}
+
+.clients .dwon .controls{
+ text-align: center;
+ margin-top:20px;
+}
+.clients .dwon .controls i{
+ font-size:35px;
+margin-top:50px;
+}
+
+
+.clients .dwon .controls ul{
+ height:60px;
+ margin-top:40px;
+ position:static;
+ width:100%;
+ margin-left:0px;
+}
+.clients .dwon .controls ul .noqt{
+ padding:0;
+ opacity:.5;
+ border-radius:100%;
+ overflow:hidden;
+   
+}
+.clients .dwon .controls ul .hg,
+
+.clients .dwon .controls ul li{
+    width:100%;
+    height: 55px;
+    text-indent: 0;
+    
+}
+.clients .dwon .controls ul .active
+{
+ width:25%;
+ background:none;
+height:100%;
+}
+.clients .dwon .controls ul .active,
+.clients .dwon .controls ul .noqt:hover{
+ opacity:1;
+ border-radius:0%;
+   
+}
+.clients .dwon .controls .carousel-control{
+ position:static;
+ opacity: 1;
+}
+
+                            /*End clients*/
+/********************************************************************************************/ 
+/********************************************************************************************/
+
